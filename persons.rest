@@ -4,16 +4,25 @@ GET http://localhost:3001/api/info/
 GET http://localhost:3001/api/persons/
 
 ###
-GET http://localhost:3001/api/persons/4
+GET http://localhost:3001/api/persons/62b64ca4fca5ca0111f6b80e
 
 ###
-DELETE http://localhost:3001/api/persons/1
+DELETE http://localhost:3001/api/persons/62b62b9195f20deae620b2d6
 
 ###
 POST http://localhost:3001/api/persons/
 Content-Type: application/json
 
 {
-  "name": "Andrés Carrillo",
-  "number": "123456789"
+  "name": "Raquel Saavedra",
+  "number": "983-1136857"
+}
+
+###
+PUT http://localhost:3001/api/persons/62b644e6d56ff7046edc7e70
+Content-Type: application/json
+
+{
+  "name": "Joel montero",
+  "number": "983-1136857"
 }
